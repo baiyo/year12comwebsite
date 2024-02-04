@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.Header {
+    text-align: center;
+    color: #aecef3;
+}
+    
+body {
+    background-color: #2b333f !important;
+}   
+
+span {
+    color: white;
+}
