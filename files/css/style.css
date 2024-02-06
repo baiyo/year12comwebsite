@@ -15,3 +15,8 @@ body {
 span {
     color: white;
 }
+
+.container-text {
+    width: 30%;
+    margin-left: 5%;
+}
