@@ -1,6 +1,12 @@
 .container {
     display: flex;
     align-items: center;
+    /* scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory; */
+}
+
+html {
+    scroll-snap-type: y mandatory;
 }
 
 .Header {
@@ -40,7 +46,10 @@ span {
 
 .background-color-blue {
     background-color: #8bc1ffab;
-    border-radius: 25px;
+}
+
+.background-color-green {
+    background-color: #76ffbbab;
 }
 
 .center {
@@ -52,4 +61,31 @@ span {
 
 .c-text {
     color: #3f4c5c;
+}
+
+.c-text-white {
+    color: #000000;
+}
+
+.background-color-grey {
+    background-color: #afafaf;
+}
+
+.rotate {
+    animation: rotation 3s infinite linear;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
