@@ -26,4 +26,17 @@ function makeCircle(item, targetAngle) {
     }
 }
 
-startUpProc("Rotate")
+let heading = document.getElementById('gradient-heading');
+
+heading.addEventListener('mousemove', event => {
+
+    heading.style.backgroundImage = `radial-gradient(circle at ${event.offsetX}px ${event.offsetY}px, lightgreen, aqua)`;
+    heading.style.webkitBackgroundClip = 'text';
+    heading.style.color = 'transparent';
+
+});	
+
+heading.addEventListener('mouseleave', function() {
+    heading.style.color = 'black';
+
+});
