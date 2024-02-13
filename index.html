@@ -15,7 +15,7 @@
             </div>
             <div class="container-sm">
                 <div class="row">
-                    <div class="container-text p-3 my-3 col-md-6 align-right">
+                    <div class="container-text p-3 my-3 col-md-6 align-right reveal-left hidden">
                         <span class="c-text">
                             This is Quintus Leung a Year 12 Student at Pakuranga College Quintus has many interests in gaming.
                             He plays games such as <br>
@@ -27,7 +27,7 @@
                         <!-- <script type="text/javascript" src="./files/js/app.js"></script> -->
     
                     </div>
-                    <div class="col-md-3 roundify">
+                    <div class="col-md-3 roundify data-tilt reveal-right hidden">
                         <img class="center" draggable="false" src="./files/Image/quintus.jpg" width="250" height="250" alt="Not really Quintus himself">
                     </div>
                 </div>
@@ -44,7 +44,7 @@
         <div class="background-color-green">
             <div class="container-sm">
                 <div class="row">
-                    <div class="container-text p-3 my-3 col-md-6 align-right">
+                    <div class="container-text p-3 my-3 col-md-6 align-right reveal-left hidden">
                         <span class="c-text">
                             This is Quintus Leung a Year 12 Student at Pakuranga College Quintus has many interests in gaming.
                             He plays games such as <br>
@@ -56,7 +56,7 @@
                         <!-- <script type="text/javascript" src="./files/js/app.js"></script> -->
     
                     </div>
-                    <div class="col-md-3 roundify">
+                    <div class="col-md-3 roundify data-tilt reveal-right hidden">
                         <img class="center" draggable="false" src="./files/Image/quintus.jpg" width="250" height="250" alt="Quintus himself">
                     </div>
                 </div>
@@ -71,5 +71,20 @@
 </body>
 
 <script type="text/javascript" src="./files/js/app.js"></script>
+<script src="./files/js/vanilla-tilt.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal({ distance: '60px' });
+    ScrollReveal().reveal('.reveal-left', { origin: 'left' });
+    ScrollReveal().reveal('.reveal-right', { origin: 'right' });
+
+    VanillaTilt.init(document.querySelectorAll(".data-tilt"), {
+		max: 15,
+		speed: 400
+	});
+
+</script>
+
+
 
 </html> 
