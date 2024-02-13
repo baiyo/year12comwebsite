@@ -12,7 +12,7 @@ html {
 .Header {
     text-align: center;
     color: #000000;
-    font-size: 40px;
+    font-size: 70px;
 }
     
 .page-1 {
@@ -46,10 +46,14 @@ span {
 
 .background-color-blue {
     background-color: #8bc1ffab;
+    width: 100vw;
+    height: 50vh;
 }
 
 .background-color-green {
     background-color: #76ffbbab;
+    width: 100vw;
+    height: 50vh;
 }
 
 .center {
@@ -80,6 +84,7 @@ section {
     width: 100vw;
     /* scroll-snap-align: start; */
 }
+
 
 .hidden {
     visibility: hidden;

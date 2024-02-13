@@ -30,7 +30,7 @@ let heading = document.getElementById('gradient-heading');
 
 heading.addEventListener('mousemove', event => {
 
-    heading.style.backgroundImage = `radial-gradient(circle at ${event.offsetX}px ${event.offsetY}px, lightgreen, aqua)`;
+    heading.style.backgroundImage = `radial-gradient(circle at ${event.offsetX}px ${event.offsetY}px, white, black)`;
     heading.style.webkitBackgroundClip = 'text';
     heading.style.color = 'transparent';
 
@@ -39,4 +39,13 @@ heading.addEventListener('mousemove', event => {
 heading.addEventListener('mouseleave', function() {
     heading.style.color = 'black';
 
+});
+
+ScrollReveal({ distance: '60px' });
+ScrollReveal().reveal('.reveal-left', { origin: 'left' });
+ScrollReveal().reveal('.reveal-right', { origin: 'right' });
+
+VanillaTilt.init(document.querySelectorAll(".data-tilt"), {
+    max: 15,
+    speed: 400
 });
