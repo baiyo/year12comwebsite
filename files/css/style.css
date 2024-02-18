@@ -7,6 +7,7 @@
 
 html {
     /* scroll-snap-type: y mandatory; */
+    overflow-x: hidden;
 }
 
 .Header {
@@ -56,6 +57,12 @@ span {
     height: 50vh;
 }
 
+.background-color-red {
+    background-color: #ff7676fb;
+    width: 100vw;
+    height: 50vh;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -88,6 +95,19 @@ section {
 
 .hidden {
     visibility: hidden;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.up {
+    margin-bottom: auto;
 }
 
 @keyframes rotation {

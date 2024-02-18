@@ -41,7 +41,7 @@ heading.addEventListener('mouseleave', function() {
 
 });
 
-ScrollReveal({ distance: '60px' });
+ScrollReveal({ distance: '90px' });
 ScrollReveal().reveal('.reveal-left', { origin: 'left' });
 ScrollReveal().reveal('.reveal-right', { origin: 'right' });
 
