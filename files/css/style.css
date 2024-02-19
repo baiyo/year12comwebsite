@@ -28,8 +28,21 @@ span {
 
 .container-text {
     border-radius: 25px;
-    font-size: 30px;
+    font-size: 16px;
     display: flex;
+}
+
+@media (min-width: 768px) 
+{
+    .container-text {
+        border-radius: 25px;
+        font-size: 30px;
+        display: flex;
+    }
+   h1
+   {
+       font-size:24px;
+   }
 }
 
 .align-right {
@@ -108,6 +121,30 @@ section {
 }
 .up {
     margin-bottom: auto;
+}
+
+.img-square {
+    width: 150px;
+    height: 150px;
+}
+
+.img-rectangle {
+    width: 250px;
+    height: 150px;
+}
+
+@media (min-width: 768px) 
+{
+    .img-square {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .img-rectangle {
+        width: 400px;
+        height: 250px;
+    }
 }
 
 @keyframes rotation {
