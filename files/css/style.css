@@ -32,19 +32,6 @@ span {
     display: flex;
 }
 
-@media (min-width: 768px) 
-{
-    .container-text {
-        border-radius: 25px;
-        font-size: 30px;
-        display: flex;
-    }
-   h1
-   {
-       font-size:24px;
-   }
-}
-
 .align-right {
     margin-right: 5%;
     padding-left: 12px;
@@ -138,6 +125,10 @@ section {
     min-height: 50vh;
 }
 
+.NavHeader {
+    align-items: center;
+}
+
 @media (min-width: 768px) 
 {
     .img-square {
@@ -150,6 +141,19 @@ section {
         width: 400px;
         height: 250px;
     }
+}
+
+@media (min-width: 768px) 
+{
+    .container-text {
+        border-radius: 25px;
+        font-size: 30px;
+        display: flex;
+    }
+   h1
+   {
+       font-size:24px;
+   }
 }
 
 @keyframes rotation {
