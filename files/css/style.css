@@ -89,7 +89,7 @@ span {
 section {
     min-height: 100vh;
     min-width: 100vw;
-    /* scroll-snap-align: start; */
+    scroll-snap-type: y mandatory;
 }
 
 
@@ -129,6 +129,14 @@ section {
     align-items: center;
 }
 
+.smaller-text {
+    font-size: 16px !important;
+}
+
+/* .button:hover {
+    color: #5c71b6;
+} */
+
 @media (min-width: 768px) 
 {
     .img-square {
@@ -150,6 +158,11 @@ section {
         font-size: 30px;
         display: flex;
     }
+
+    .smaller-text {
+        font-size: 24px !important;
+    }
+    
    h1
    {
        font-size:24px;
